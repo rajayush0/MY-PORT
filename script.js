@@ -40,3 +40,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Contact Form Handling
+const contactForm = document.querySelector('.message-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for your message! This is a demo form.');
+        contactForm.reset();
+    });
+}
