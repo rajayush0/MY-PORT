@@ -1,7 +1,18 @@
 // Custom Cursor
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorOutline = document.querySelector('.cursor-outline');
+let proj2 = document.getElementById('proj2');
 
+//projects section
+proj2.addEventListener('click', () => {
+    window.open('https://flashhubby.netlify.app/');
+})
+proj2.addEventListener('mouseover', () => {
+    cursorOutline.style.cursor = 'pointer';
+})
+proj2.addEventListener('mouseout', () => {
+    cursorOutline.style.cursor = 'default';
+})
 window.addEventListener('mousemove', (e) => {
     const posX = e.clientX;
     const posY = e.clientY;
