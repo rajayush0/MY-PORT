@@ -616,6 +616,87 @@ header::before {
     margin: 0;
 }
 
+/* New About Section Styles */
+.about-details {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.about-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.about-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.about-list strong {
+    color: #fff;
+    /* Make bold text white/brighter */
+    font-weight: 700;
+}
+
+[data-theme="light"] .about-list strong {
+    color: #000;
+}
+
+.tech-stack-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tech-category {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.tech-label {
+    font-weight: 700;
+    color: var(--text-color);
+    margin-right: 5px;
+}
+
+.tech-items {
+    color: #aaa;
+}
+
+[data-theme="light"] .tech-items {
+    color: #555;
+}
+
+.closing-text {
+    font-size: 1rem;
+    color: #aaa;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+[data-theme="light"] .closing-text {
+    color: #555;
+}
+
 /* Profile Image Grid */
 .about-right {
     flex: 1;
